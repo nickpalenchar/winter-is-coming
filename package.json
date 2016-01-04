@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,10 @@
   },
   "homepage": "https://github.com/nickpalenchar/winter-is-coming#readme",
   "dependencies": {
-    "path": "~0.12.7",
-    "chalk": "~1.1.1",
     "body-parser": "~1.14.2",
-    "express": "~4.13.3"
+    "chalk": "~1.1.1",
+    "express": "~4.13.3",
+    "mongoose": "^4.3.4",
+    "path": "~0.12.7"
   }
 }
