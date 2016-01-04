@@ -1,0 +1,25 @@
+{
+  "name": "03.fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickpalenchar/winter-is-coming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickpalenchar/winter-is-coming/issues"
+  },
+  "homepage": "https://github.com/nickpalenchar/winter-is-coming#readme",
+  "dependencies": {
+    "path": "~0.12.7",
+    "chalk": "~1.1.1",
+    "body-parser": "~1.14.2",
+    "express": "~4.13.3"
+  }
+}
