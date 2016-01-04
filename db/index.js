@@ -17,7 +17,13 @@ db.on('error', console.error.bind(console, "mongodb connection error"));
 
 var UserSchema = new schema({
     username: String,
-    defaultLocation: {type: Number, default: }
+    defaultLocation: {type: [Number], default: [0,0] },
+    google: {
+        id: String,
+        token: String,
+        name: String,
+        email: String
+    }
 });
 
 module.exports = {
