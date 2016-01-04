@@ -6,17 +6,9 @@ app.use(bodyParser.json());
 
 app.use(express.static('/public'));
 
-app.get('/', function(req, res){
-    res.send("Hello World!");
-});
-
-
-// handle any errors
-app.use(function(err, req, res) {
-    res.status(err.status || 500);
-    console.log({ error: err });
-    res.send("An error occured: \n", err.status, err.message);
-});
+//app.get('/', function(req, res){
+//    res.send("Hello World!");
+//});
 
 app.use(require('./server/router'));
 

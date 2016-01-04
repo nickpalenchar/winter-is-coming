@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/nickpalenchar/winter-is-coming#readme",
   "dependencies": {
+    "bluebird": "^3.1.1",
     "body-parser": "~1.14.2",
     "chalk": "~1.1.1",
     "express": "~4.13.3",
+    "express-session": "^1.12.1",
     "mongoose": "^4.3.4",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^0.2.0",
     "path": "~0.12.7"
   }
 }
