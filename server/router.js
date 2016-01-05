@@ -9,6 +9,10 @@ router.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '../browser/index.html'));
 })
 
+router.get('/home', function(req, res){
+    res.sendfile(path.join(__dirname, '../browser/home.html'))
+})
+
 //If no middleware was hit
 router.use(function(req, res){
     res.status(400);

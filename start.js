@@ -1,6 +1,9 @@
+require('babel-core');
 var bodyParser = require('body-parser');
 var express = require('express');
 var app = express();
+
+var User = require('./db');
 
 app.use(bodyParser.json());
 

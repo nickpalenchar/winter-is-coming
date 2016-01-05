@@ -1,7 +1,6 @@
 /**
  * Created by nick on 1/4/16.
  */
-var path = require('path');
 var express = require('express');
 var app = express();
 module.exports = app;
@@ -25,8 +24,7 @@ var UserSchema = new schema({
         email: String
     }
 });
-
+UserSchema.statics.findOrCreate = require('./helper');
 module.exports = {
-    //Schema1: Schema1;
-    //Schema2: Schema2;
+    User: mongoose.model('User', UserSchema)
 }

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "whirl": "npm start",
     "start": "nodemon start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,17 +19,19 @@
   },
   "homepage": "https://github.com/nickpalenchar/winter-is-coming#readme",
   "dependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.3.26",
     "bluebird": "^3.1.1",
     "body-parser": "~1.14.2",
     "chalk": "~1.1.1",
     "express": "~4.13.3",
     "express-session": "^1.12.1",
+    "google-calendar": "^1.3.2",
     "mongoose": "^4.3.4",
+    "mongoose-findorcreate": "^0.1.2",
+    "openweathermap": "^1.0.0",
     "passport": "^0.3.2",
     "passport-google-oauth": "^0.2.0",
-    "path": "~0.12.7",
-    "google-calendar": "^1.3.2",
-    "openweathermap": "^1.0.0",
     "path": "~0.12.7",
     "twilio": "^2.8.0"
   }
