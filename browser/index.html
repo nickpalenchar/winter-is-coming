@@ -2,10 +2,12 @@
 <html>
 
 <head>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='public/style.css'>
+    <script src='app/angular.min.js'></script>
+    <script src='app/main.js'></script>
 </head>
 
-<body>
+<body ng-app='stark' ng-controller='EverythingCtrl'>
     <header class='flex-container'>
         <i class='snowflake'></i>
         <i class='snowflake'></i>
@@ -14,10 +16,12 @@
         <i class='snowflake'></i>
     </header>
     <section>
-        <h1>Winter is Coming</h1>
+        <h1 ng-show='loggedIn'>Winter is Coming</h1>
+        <h1 ng-show='loggedIn'>You know nothing, {{user.name}}.</h1>
+        <h1 ng-show='loggedIn'>You know everything, {{user.name}}.</h1>
     </section>
     <section id='auth'>
-        <button id='signin-btn'>Login with Google</button>
+        <a href='auth/google'><button id='signin-btn'>Login with Google</button></a>
         <button id='signup-btn'>Signup with Google</button>
     </section>
 
@@ -27,3 +31,4 @@
     </section>
 
 </body>
+</html>

@@ -7,13 +7,16 @@ var path = require('path');
 //Authentication/sessions mini-app
 router.use(require('./auth'));
 
+router.use('/public', express.static(path.join(__dirname, '../public')))
+router.use('/app', express.static(path.join(__dirname, '../browser/js')))
+
 router.get('/', function(req, res){
     console.log("IN")
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../browser/index.html'));
 })
 
 router.get('/home', function(req, res){
-    res.sendfile(path.join(__dirname, '../browser/home.html'))
+    res.sendfile(path.join(__dirname, '../browser/index.html'))
 })
 
 //If no middleware was hit
