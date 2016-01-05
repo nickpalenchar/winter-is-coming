@@ -1,12 +1,15 @@
-var router = require('express').Router();
+var express = require('express');
+var router = express.Router();
 var path = require('path');
+
+// router.use(express.static('../public/'))
 
 //Authentication/sessions mini-app
 router.use(require('./auth'));
 
-
 router.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '../browser/index.html'));
+    console.log("IN")
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 })
 
 router.get('/home', function(req, res){
